@@ -1,0 +1,40 @@
+{
+  "name": "vaultifyjs",
+  "version": "1.0.0",
+  "description": "A privacy-focused CLI tool that automates OCR and local AI processing to intelligently organize and archive documents.",
+  "main": "dist/index.js",
+  "bin": {
+    "vaultify": "dist/index.js"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "format": "biome format --write ./src",
+    "lint": "biome lint --write ./src",
+    "ci-check": "biome ci ./src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "keywords": [],
+  "author": "Vincent Riva <contact@vincentriva.fr> (https://www.vincentriva.fr)",
+  "license": "GPL-3.0-or-later",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "chalk": "^5.6.2",
+    "curlew.js": "^1.0.3",
+    "ora": "^9.0.0",
+    "pdf-parse": "^2.4.5",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.9",
+    "@types/axios": "^0.9.36",
+    "@types/node": "^25.0.0",
+    "@types/pdf-parse": "^1.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
