@@ -1,11 +1,16 @@
 {
-  "name": "vaultifyjs",
+  "name": "@treast/vaultify",
   "version": "1.0.0",
   "description": "A privacy-focused CLI tool that automates OCR and local AI processing to intelligently organize and archive documents.",
   "main": "dist/index.js",
   "bin": {
     "vaultify": "dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc",
@@ -19,6 +24,10 @@
   },
   "keywords": [],
   "author": "Vincent Riva <contact@vincentriva.fr> (https://www.vincentriva.fr)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/treast/vaultify.git"
+  },
   "license": "GPL-3.0-or-later",
   "type": "commonjs",
   "dependencies": {
