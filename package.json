@@ -1,6 +1,6 @@
 {
   "name": "@treast/vaultify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A privacy-focused CLI tool that automates OCR and local AI processing to intelligently organize and archive documents.",
   "main": "dist/index.js",
   "bin": {
